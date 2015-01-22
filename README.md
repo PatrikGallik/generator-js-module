@@ -1,4 +1,4 @@
-# generator-js-module [![Build Status](https://travis-ci.org/yeoman/generator-jquery.svg?branch=master)](https://travis-ci.org/yeoman/generator-jquery)
+# generator-js-module [![Build Status](https://travis-ci.org/PatrikGallik/generator-js-module.svg?branch=master)](https://travis-ci.org/PatrikGallik/generator-js-module)
 
 > Generate a CommonJS/AMD/Browser module.
 
