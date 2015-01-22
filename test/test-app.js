@@ -11,7 +11,7 @@ describe('js-module:app', function () {
       .inDir(path.join(os.tmpdir(), './temp-test'))
       .withOptions({ 'skip-install': true })
       .withPrompt({
-        someOption: true
+        hello: true
       })
       .on('end', done);
   });
@@ -21,7 +21,13 @@ describe('js-module:app', function () {
       'bower.json',
       'package.json',
       '.editorconfig',
-      '.jshintrc'
+      '.jshintrc',
+      '.gitignore',
+      '.travis.yml',
+      'readme.md',
+      'src/module.js',
+      'test/spec/module.js',
+      'test/karma.conf.js'
     ]);
   });
 });
