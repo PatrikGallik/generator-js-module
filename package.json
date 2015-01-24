@@ -1,10 +1,10 @@
 {
   "name": "generator-js-module",
-  "version": "0.0.0",
-  "description": "Yeoman generator",
+  "version": "0.0.1",
+  "description": "Yeoman generator for a CommonJS/AMD/Browser module.",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "PatrikGallik/generator-js-module",
+  "repository": "https://github.com/PatrikGallik/generator-js-module",
   "author": {
     "name": "Patrik Gallik",
     "email": "patrik.gallik@gmail.com",
@@ -20,7 +20,11 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "CommonJS",
+    "module",
+    "AMD",
+    "Yeoman"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.0",

@@ -17,14 +17,21 @@ module.exports = yeoman.generators.Base.extend({
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'hello',
-      message: 'Would you like to proceed?',
-      default: true
+      type: 'input',
+      name: 'name',
+      message: 'Name of the module?',
+      default: 'JS Module'
+    },{
+      type: 'input',
+      name: 'description',
+      message: 'Description of the module?',
+      default: 'Description'
     }];
 
     this.prompt(prompts, function (props) {
-      this.hello = props.hello;
+
+      this.appName = props.name;
+      this.appDescription = props.description;
 
       done();
     }.bind(this));
@@ -33,11 +40,11 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: {
     app: function () {
-      this.fs.copy(
+      this.template(
         this.templatePath('_package.json'),
         this.destinationPath('package.json')
       );
-      this.fs.copy(
+      this.template(
         this.templatePath('_bower.json'),
         this.destinationPath('bower.json')
       );
@@ -60,7 +67,7 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('test'),
         this.destinationPath('test')
       );
-      this.fs.copy(
+      this.template(
         this.templatePath('readme.md'),
         this.destinationPath('readme.md')
       );

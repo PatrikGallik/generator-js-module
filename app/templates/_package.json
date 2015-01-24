@@ -1,8 +1,17 @@
 {
-  "name": "package",
-  "description": "insert description",
-  "author": "your name",
+  "name": "<%= _.slugify(appName) %>",
   "version": "0.0.0",
+  "description": "<%= appDescription %>",
+  "license": "MIT",
+  "author": {
+    "name": "Name here",
+    "email": "email@here",
+    "url": "https://github.com/NameHere"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "dependencies": {},
   "devDependencies": {
     "chai": "^1.9.1",
