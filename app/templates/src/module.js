@@ -1,8 +1,8 @@
 /**
  * Add a description.
  *
- * @author   My name (<https://github.com/PatrikGallik>)
- * @version  0.0.1
+ * @author   My name (<https://github.com/MyName>)
+ * @version  0.0.0
  * @license  MIT
  */
 
@@ -16,6 +16,7 @@
 
 	var MyModule = {
 		testMe: function() {
+			console.log('test log');
 			return _privateString;
 		}
 	};

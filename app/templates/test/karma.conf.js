@@ -8,7 +8,7 @@ module.exports = function (config) {
     basePath: '',
 
     // frameworks to use
-    frameworks: [ 'mocha', 'chai' ],
+    frameworks: [ 'mocha', 'chai', 'sinon' ],
 
     // list of files / patterns to load in the browser
     files: [
